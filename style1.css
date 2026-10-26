@@ -1,4 +1,4 @@
-/* 1. Basic browser reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,22 +10,21 @@ body {
     color: #1d4746;
 }
 
-/* 2. Top navigation bar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    
     padding: 15px 30px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(212, 243, 226, 0.95);
-    z-index: 10;
+    
 }
 
-/* 3. University logo and name */
+
 .logo {
     display: flex;
     align-items: center;
@@ -33,7 +32,7 @@ body {
     color: #173332;
     text-decoration: none;
     font-weight: bold;
-    white-space: nowrap;
+    
 }
 
 .logo img {
@@ -42,7 +41,7 @@ body {
     height: auto;
 }
 
-/* 4. Navigation links */
+
 nav ul {
     display: flex;
     align-items: center;
@@ -60,7 +59,7 @@ nav a:hover {
     color: #438984;
 }
 
-/* 5. Explore Campus button */
+
 .explore-btn {
     display: inline-block;
     padding: 12px 20px;
@@ -69,15 +68,14 @@ nav a:hover {
     color: white;
     font-size: 13px;
     text-decoration: none;
-    white-space: nowrap;
+
 }
 
-.explore-btn:hover,
-.secondary-btn:hover {
+
+.secondary-btn {
     background-color: #286d67;
 }
 
-/* 6. Main hero area and background image */
 .hero {
     min-height: 100vh;
     background-image: url("image/moonvale.png");
@@ -91,7 +89,7 @@ nav a:hover {
     padding: 150px 20px 40px;
 }
 
-/* 7. Main text area */
+
 .hero-content {
     width: 100%;
     max-width: 750px;
@@ -120,7 +118,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* 8. Buttons below the description */
+
 .secondary-btn {
     display: inline-block;
     margin: 5px;
@@ -131,7 +129,7 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* 9. Keep the layout usable on narrower screens */
+
 @media (max-width: 900px) {
     .navbar {
         flex-wrap: wrap;
@@ -139,11 +137,7 @@ nav a:hover {
         padding: 12px 15px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
+    
 
     .hero h1 {
         font-size: 32px;
